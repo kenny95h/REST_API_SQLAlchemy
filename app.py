@@ -11,7 +11,7 @@ from resources.store import Store, StoreList
 from db import db
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'sqlite:///data.db') # link to Heroku Postgres database or sqlite locally
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL1', 'sqlite:///data.db') # link to Heroku Postgres database or sqlite locally
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False # turns off the flask modification tracker
 app.config['PROPAGATE_EXCEPTIONS'] = True # To allow flask propagating exception even if debug is set to false on app
 app.secret_key = 'jose'
