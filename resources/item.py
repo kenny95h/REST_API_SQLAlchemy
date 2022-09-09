@@ -66,4 +66,4 @@ class Item(Resource):
 
 class ItemList(Resource):
     def get(self):
-        return {'items': [item.json() for item in ItemModel.query.all()]} # all returns a list of all items. Need to iterate through and convert to JSON
+        return {'items': [item.json() for item in ItemModel.find_all()]} # all returns a list of all items. Need to iterate through and convert to JSON
